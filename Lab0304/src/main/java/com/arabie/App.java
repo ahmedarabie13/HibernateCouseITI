@@ -23,6 +23,7 @@ public class App {
         Student student = new Student("ahmed", "arabie", "jets");
         Teacher teacher = new Teacher("ahmed", "jamal", new Date());
 
+        
         session.beginTransaction();
         session.persist(person1);
         session.persist(person2);
