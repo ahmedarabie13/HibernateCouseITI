@@ -18,6 +18,7 @@ import org.hibernate.annotations.Parameter;
 @Entity
 @Table(name = "seller"
         , catalog = "biddingschema")
+//2nd level cache collection
 @Cacheable
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Seller implements java.io.Serializable {

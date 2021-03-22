@@ -73,17 +73,10 @@ public class App {
 //        seller1.getProducts().stream().forEach(System.out::println);
 //        ----------select-------------
 //        System.out.println(seller1.getUser().getId());
-//        todo: not to be checked eager is always join strategy
+//        todo: note to be checked eager is always join strategy
 //        todo: difference between org.hibernate.annotations.Fetch and org.hibernate.Fetch
         seller1.getProducts();
 
-//        System.out.println(seller1.getProducts());
-//        System.out.println(seller1.getProducts().size());
-//        System.out.println(seller1);
-//        session.getTransaction().commit();
-//        Seller seller2 = session1.load(Seller.class,1);
-//        System.out.println(seller1.getProducts());
-//        System.out.println(seller2.getProducts());
 
         session.close();
 //        session1.close();

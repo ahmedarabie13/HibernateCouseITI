@@ -9,11 +9,11 @@
         <discriminator column="person_type" type="string"/>
         <property name="firstName" column="first_name"/>
         <property name="lastName" column="last_name"/>
-        <joined-subclass name="Student" table="student">
+        <joined-subclass name="Student" table="student" discriminator-value="student">
             <key column="id"/>
             <property name="department" column="department"/>
         </joined-subclass>
-        <joined-subclass name="Teacher"  table="teacher">
+        <joined-subclass name="Teacher"  table="teacher" discriminator-value="teacher">
             <key column="id"/>
             <property name="hireDate" column="hire_date" type="date"/>
         </joined-subclass>
